@@ -13,6 +13,7 @@ describe("Register Use Case", () => {
     usersRepository = new InMemoryUsersRepository();
     registerUseCase = new RegisterUseCase(usersRepository);
   });
+
   it("should to register", async () => {
     const { user } = await registerUseCase.execute({
       name: "John Doe",

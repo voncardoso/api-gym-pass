@@ -7,4 +7,6 @@ export class PrismaCheckInsRepository implements CheckInsRepository {
     const checkIn = await prisma.checkIn.create({ data });
     return checkIn;
   }
+
+  // async findByUserIdOnDate(userId: string, date: Date): Promise<void> {}
 }
